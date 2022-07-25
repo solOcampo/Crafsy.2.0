@@ -1,41 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/1a451b1708.js" crossorigin="anonymous"></script>
-    <!-- Css -->
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <title>Register</title>
-</head>
+
+    <%- include('./partials/head',{title: 'Register'}) %> 
+
 <body class="register">
-    <header>
-        <div class="top">
-            <div class="logo">
-                <a href="/">
-                    <img src="/images/logo.png" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="burger">
-            <input type="checkbox" name="burger" id="burger" checked>
-            <label for="burger"><i class="fas fa-ellipsis-v"></i></label>
-            <nav>
-                <ul class="menu">
-                    <li><a href="">Smartphones</a></li>
-                    <li><a href="">Tablets</a></li>
-                    <li><a href="">Notebooks</a></li>
-                </ul>
-                <ul class="user">
-                    <li><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/register">Registro</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+    <%- include('./partials/header') %> 
+
     <main>
         <h1>Registro</h1>
         <form action="" method="get">

@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <%- include('./partials/head',{title: 'Crafsy'}) %> 
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/1a451b1708.js" crossorigin="anonymous"></script>
+        <!-- Css -->
+        <link rel="stylesheet" href="/stylesheets/styles.css">
+        <title>Crafsy</title>
+    </head>
     <body class="detail">
-
-        <%- include('./partials/header') %> 
-
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="burger">
+                <input type="checkbox" name="burger" id="burger" checked>
+                <label for="burger"><i class="fas fa-ellipsis-v"></i></label>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="">Smartphones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Notebooks</a></li>
+                    </ul>
+                    <ul class="user">
+                        <li><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Registro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <main>
             <section class="imagenes">
                 <div class="img-principal">
-                    <img src="/images/productos/_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png" alt="">
+                    <img src="/images/productos/ELECTRIC-GUNMETAL-1000X1000PX-01.png" alt="">
                 </div>
                 <div class="img-secundarias">
                     <img src="/images/productos/_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png" alt="">
@@ -20,7 +49,7 @@
                 </div>
             </section>
             <section class="product-detail">
-                <h2>Motorola </h2>
+                <h1>Motorola </h1>
                 <h1>Celular Motorola Moto G52 6+128 Gb Black</h1>
                 <div class="bloque-completo">
                     <article class="price">
@@ -38,7 +67,7 @@
                     </article>
                 </div>
                 <aside>
-                    <h3>Aprovecha las promociones</h3>
+                    <h1>Aprovecha las promociones</h1>
                     <article>
                         <p><i class="fas fa-truck"></i></p>
                         <p>Envio gratis</p>

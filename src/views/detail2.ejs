@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <%- include('./partials/head',{title: 'Crafsy'}) %> 
-
     <body class="detail">
-
-        <%- include('./partials/header') %> 
-
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="burger">
+                <input type="checkbox" name="burger" id="burger" checked>
+                <label for="burger"><i class="fas fa-ellipsis-v"></i></label>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="">Smartphones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Notebooks</a></li>
+                    </ul>
+                    <ul class="user">
+                        <li><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Registro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <main>
             <section class="imagenes">
                 <div class="img-principal">
-                    <img src="/images/productos/_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png" alt="">
+                    <img src="/images/productos/Racer_5G_Sangria-Red_BACKSIDE.png" alt="">
                 </div>
                 <div class="img-secundarias">
                     <img src="/images/productos/_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png" alt="">

@@ -1,46 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/1a451b1708.js" crossorigin="anonymous"></script>
-    <!-- Css -->
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <title>Crafsy</title>
-</head>
+
+    <%- include('./partials/head',{title: 'Crafsy'}) %> 
+
 <body class="home">
-    <header>
-        <div class="top">
-            <div class="logo">
-                <a href="/">
-                    <img src="/images/logo.png" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="burger">
-            <input type="checkbox" name="burger" id="burger" checked>
-            <label for="burger"><i class="fas fa-ellipsis-v"></i></label>
-            <nav>
-                <ul class="menu">
-                    <li><a href="">Smartphones</a></li>
-                    <li><a href="">Tablets</a></li>
-                    <li><a href="">Notebooks</a></li>
-                </ul>
-                <ul class="user">
-                    <li><a href="/products/cart"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href="/users/login">Login</a></li>
-                    <li><a href="/users/register">Registro</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include('./partials/header') %> 
     <main>
         <section class="products_cards">
             <article>
                 <div class="img_producto">
-                    <a href="/products/detail">
+                    <a href="/products/detail/1">
                         <img src="/images/img-phone-1.jpg" alt="">
                     </a>
                 </div>
@@ -50,7 +19,7 @@
             </article>
             <article>
                 <div class="img_producto">
-                    <a href="/products/detail">
+                    <a href="/products/detail/2">
                         <img src="/images/img-phone-02.jpg" alt="">
                     </a>
                 </div>
@@ -60,7 +29,7 @@
             </article>
             <article>
                 <div class="img_producto">
-                    <a href="/products/detail">
+                    <a href="/products/detail/3">
                         <img src="/images/img-phone-03.jpg" alt="">
                     </a>
                 </div>
@@ -70,7 +39,7 @@
             </article>
             <article>
                 <div class="img_producto">
-                    <a href="/products/detail">
+                    <a href="/products/detail/2/nuevo">
                         <img src="/images/img-phone-1.jpg" alt="">
                     </a>
                 </div>
@@ -80,7 +49,7 @@
             </article>
             <article>
                 <div class="img_producto">
-                    <a href="/products/detail">
+                    <a href="/products/detail/5">
                         <img src="/images/img-phone-02.jpg" alt="">
                     </a>
                 </div>
@@ -90,7 +59,7 @@
             </article>
             <article>
                 <div class="img_producto">
-                    <a href="/products/detail">
+                    <a href="/products/detail/6">
                         <img src="/images/img-phone-03.jpg" alt="">
                     </a>
                 </div>
@@ -144,5 +113,7 @@
             </section>
         </aside>
     </main>
+    
+    <%- include('./partials/footer') %> 
 </body>
 </html>
