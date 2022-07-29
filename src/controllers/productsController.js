@@ -1,19 +1,13 @@
-
+let productos = require('../data/productos.json')
 
 module.exports = {
     detail : (req,res) => {
-
         let id = +req.params.id
-        let productoEspecial = req.params.especial
-
-        if (id === 2 && productoEspecial === "nuevo") {
-            return res.render('detailEspecial')
-        }else if(id === 2){
-            return res.render('detail2')
-        }else{
-            return res.render('detail')
-        }
-        
+        let productoEnDetalle = productos.find((producto) => producto.id === id)
+        return res.render('detail',{
+            producto : productoEnDetalle,
+            productos
+        })
     },
     cart: (req,res) => {
         res.render('cart')

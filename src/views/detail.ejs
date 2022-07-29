@@ -10,23 +10,23 @@
         <main>
             <section class="imagenes">
                 <div class="img-principal">
-                    <img src="/images/productos/_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png" alt="">
+                    <img src="/images/productos/<%= producto.imagenes[0] %>" alt="">
                 </div>
                 <div class="img-secundarias">
-                    <img src="/images/productos/_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png" alt="">
-                    <img src="/images/productos/_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png" alt="">
-                    <img src="/images/productos/_0000_2020_Capri-_BasicPack_PhantomBlack_Backside.png" alt="">
-                    <img src="/images/productos/168343-800-auto.png" alt="">
+                    <img src="/images/productos/<%= producto.imagenes[1] %>" alt="">
+                    <img src="/images/productos/<%= producto.imagenes[2] %>" alt="">
+                    <img src="/images/productos/<%= producto.imagenes[3] %>" alt="">
+                    <img src="/images/productos/<%= producto.imagenes[0] %>" alt="">
                 </div>
             </section>
             <section class="product-detail">
-                <h2>Motorola </h2>
-                <h1>Celular Motorola Moto G52 6+128 Gb Black</h1>
+                <h2><%= producto.marca %></h2>
+                <h1><%= producto.titulo %></h1>
                 <div class="bloque-completo">
                     <article class="price">
-                        <small>20%</small>
-                        <span>$56000</span>
-                        <p class="precio">$44800</p>
+                        <small>%<%= producto.descuento %></small>
+                        <span>$<%= producto.precio %></span>
+                        <p class="precio">$<%= producto.precio - (producto.precio * producto.descuento / 100)%></p>
                     </article>
                     <article>
                         <div class="sumar-carrito">
@@ -55,40 +55,20 @@
             </section>
             <section class="text-detail">
                 <h2>Detalle del producto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.</p>
+                <p><%= producto.descripcion %></p>
             </section>
             <section class="related">
                 <h2>Productos relacionados</h2>
-                <article>
-                    <div class="related-img-0"></div>
-                    <p>$80000</p>
-                    <h4>moto g100</h4>
-                    <button>añadir al carrito</button>
-                </article>
-                <article>
-                    <div class="related-img-1">
-                        <img src="" alt="">
-                    </div>
-                    <p>$60000</p>
-                    <h4>redmi note 10</h4>
-                    <button>añadir al carrito</button>
-                </article>
-                <article>
-                    <div class="related-img-2">
-                        <img src="" alt="">
-                    </div>
-                    <p>$500</p>
-                    <h4>alcatel no tengo ni idea</h4>
-                    <button>añadir al carrito</button>
-                </article>
-                <article>
-                    <div class="related-img-3">
-                        <img src="" alt="">
-                    </div>
-                    <p>$220000</p>
-                    <h4>samsung galaxy s21</h4>
-                    <button>añadir al carrito</button>
-                </article>
+                <% for( let i = 0; i < 4; i++ ) { %>
+                    <a href="/products/detail/<%= productos[i].id %>">
+                        <article>
+                            <div class="related-img-0" style="background-image:url('/images/productos/<%= productos[i].imagenes[0] %>')"></div>
+                            <p>$<%= productos[i].precio %></p>
+                            <h4><%= productos[i].titulo %></h4>
+                            <button>añadir al carrito</button>
+                        </article>
+                    </a>
+                <% } %>
             </section>
         </main>
         <%- include('./partials/footer') %> 
