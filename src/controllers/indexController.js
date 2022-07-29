@@ -1,10 +1,13 @@
+let aside = require('../data/aside.json')
+let productos = require('../data/productos.json')
 
 module.exports = {
     home : (req,res) => {
         return res.render('index', 
-        { 
-            title: 'La comision 17 es la mejor',
-            mensaje: 'Aca estamos aprendiendo controladores'
+        {
+            mensaje: 'Aca estamos aprendiendo controladores',
+            aside,
+            productos
         });
     }
 }

@@ -7,95 +7,29 @@
     <%- include('./partials/header') %> 
     <main>
         <section class="products_cards">
-            <article>
-                <div class="img_producto">
-                    <a href="/products/detail/1">
-                        <img src="/images/img-phone-1.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Nombre del Producto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus ipsum cumque, iure molestiae laboriosam vero id eligendi amet, animi quod? Possimus aliquam, ex quibusdam sunt nulla iusto voluptate dolore?</p>
-                <a class="botonRedireccion" href="/products/detail">ver mas</a>
-            </article>
-            <article>
-                <div class="img_producto">
-                    <a href="/products/detail/2">
-                        <img src="/images/img-phone-02.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Nombre del Producto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus ipsum cumque, iure molestiae laboriosam vero id eligendi amet, animi quod? Possimus aliquam, ex quibusdam sunt nulla iusto voluptate dolore?</p>
-                <a class="botonRedireccion" href="/products/detail">ver mas</a>
-            </article>
-            <article>
-                <div class="img_producto">
-                    <a href="/products/detail/3">
-                        <img src="/images/img-phone-03.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Nombre del Producto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus ipsum cumque, iure molestiae laboriosam vero id eligendi amet, animi quod? Possimus aliquam, ex quibusdam sunt nulla iusto voluptate dolore?</p>
-                <a class="botonRedireccion" href="/products/detail">ver mas</a>
-            </article>
-            <article>
-                <div class="img_producto">
-                    <a href="/products/detail/2/nuevo">
-                        <img src="/images/img-phone-1.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Nombre del Producto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus ipsum cumque, iure molestiae laboriosam vero id eligendi amet, animi quod? Possimus aliquam, ex quibusdam sunt nulla iusto voluptate dolore?</p>
-                <a class="botonRedireccion" href="/products/detail">ver mas</a>
-            </article>
-            <article>
-                <div class="img_producto">
-                    <a href="/products/detail/5">
-                        <img src="/images/img-phone-02.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Nombre del Producto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus ipsum cumque, iure molestiae laboriosam vero id eligendi amet, animi quod? Possimus aliquam, ex quibusdam sunt nulla iusto voluptate dolore?</p>
-                <a class="botonRedireccion" href="/products/detail">ver mas</a>
-            </article>
-            <article>
-                <div class="img_producto">
-                    <a href="/products/detail/6">
-                        <img src="/images/img-phone-03.jpg" alt="">
-                    </a>
-                </div>
-                <h3>Nombre del Producto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus ipsum cumque, iure molestiae laboriosam vero id eligendi amet, animi quod? Possimus aliquam, ex quibusdam sunt nulla iusto voluptate dolore?</p>
-                <a class="botonRedireccion" href="/products/detail">ver mas</a>
-            </article>
+            <% productos.forEach(producto => { %>
+                <article>
+                    <div class="img_producto">
+                        <a href="/products/detail/<%= producto.id %> ">
+                            <img src="/images/productos/<%= producto.imagenes[0] %>" alt="">
+                        </a>
+                    </div>
+                    <h3><%= producto.titulo %> </h3>
+                    <p><%= producto.descripcion %></p>
+                    <a class="botonRedireccion" href="/products/detail/<%= producto.id %>">ver mas</a>
+                </article>
+            <% }) %>
         </section>
         <aside>
             <section>
                 <h2>Tutoriales</h2>
                 <div class="grid">
-                    <article>
-                        <img src="/images/aside-01.jpg" alt="">
-                        <p>Titulo de tutorial de reparacion</p>
-                    </article>
-                    <article>
-                        <img src="/images/aside-02.jpg" alt="">
-                        <p>Titulo de tutorial de reparacion</p>
-                    </article>
-                    <article>
-                        <img src="/images/aside-03.jpg" alt="">
-                        <p>Titulo de tutorial de reparacion</p>
-                    </article>
-                    <article>
-                        <img src="/images/aside-04.jpg" alt="">
-                        <p>Titulo de tutorial de reparacion</p>
-                    </article>
-                    <article>
-                        <img src="/images/aside-03.jpg" alt="">
-                        <p>Titulo de tutorial de reparacion</p>
-                    </article>
-                    <article>
-                        <img src="/images/aside-04.jpg" alt="">
-                        <p>Titulo de tutorial de reparacion</p>
-                    </article>
+                    <% for( let i = 0; i < aside.length; i++ ) { %>
+                        <article>
+                            <img src="/images/<%= aside[i].imagen %>"  alt="">
+                            <p><%= aside[i].titulo %> </p>
+                        </article>
+                    <% } %> 
                 </div>
             </section>
             <section class="publicidad">
