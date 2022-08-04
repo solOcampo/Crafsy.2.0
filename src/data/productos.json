@@ -6,7 +6,7 @@
         "precio": 56000,
         "descuento": 20,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
-        "stock":13,
+        "stock": 13,
         "imagenes": [
             "_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png",
             "_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png",
@@ -21,7 +21,7 @@
         "precio": 220000,
         "descuento": 20,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
-        "stock":13,
+        "stock": 13,
         "imagenes": [
             "164953-800-auto.png",
             "164958-800-auto.png",
@@ -36,27 +36,12 @@
         "precio": 80000,
         "descuento": 10,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
-        "stock":13,
+        "stock": 13,
         "imagenes": [
             "Moto-G100-pdp-kv-render-Iridescent-Sky-8g7y85otv.png",
             "_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png",
             "_0000_2020_Capri-_BasicPack_PhantomBlack_Backside.png",
             "169868-800-auto.png"
-        ]
-    },
-    {
-        "id": 4,
-        "marca": "Motorola",
-        "titulo": "Celular Motorola Moto G52 6+128 Gb Black",
-        "precio": 56000,
-        "descuento": 20,
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
-        "stock":13,
-        "imagenes": [
-            "_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png",
-            "_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png",
-            "_0000_2020_Capri-_BasicPack_PhantomBlack_Backside.png",
-            "168343-800-auto.png"
         ]
     },
     {
@@ -66,7 +51,7 @@
         "precio": 220000,
         "descuento": 20,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
-        "stock":13,
+        "stock": 13,
         "imagenes": [
             "169868-800-auto.png",
             "164953-800-auto.png",
@@ -76,17 +61,32 @@
     },
     {
         "id": 6,
-        "marca": "Motorola",
-        "titulo": "moto g100",
-        "precio": 80000,
+        "marca": "Iphone",
+        "titulo": "Iphone 13 pro max plus extra super ultra violeta",
+        "precio": 530000,
         "descuento": 10,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
-        "stock":13,
+        "stock": 3,
         "imagenes": [
             "Moto-G100-pdp-kv-render-Iridescent-Sky-8g7y85otv.png",
             "_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png",
             "_0000_2020_Capri-_BasicPack_PhantomBlack_Backside.png",
             "169868-800-auto.png"
+        ]
+    },
+    {
+        "id": 7,
+        "marca": "Nokia",
+        "titulo": "Nokia 1100 un telefonazo y antirrobo",
+        "precio": 20000,
+        "descuento": 40,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
+        "stock": 50,
+        "imagenes": [
+            "Nokia 1100.jpg",
+            "Nokia 1100 caja.webp",
+            "Nokia 1100 extra.webp",
+            "Nokia 1100 negro.jpg"
         ]
     }
 ]

@@ -9,15 +9,14 @@
         <section class="products_cards">
             <% productos.forEach(producto => { %>
                 <article>
-                    <div class="img_producto">
-                        <a href="/products/detail/<%= producto.id %> ">
-                            <img src="/images/productos/<%= producto.imagenes[0] %>" alt="">
+                        <a href="/products/detail/<%= producto.id %>">
+                        <div class="img_producto" style="background-image:url('/images/productos/<%= producto.imagenes[0]%>')">
+                        </div>
+                        <h3><%= producto.titulo %> </h3>
+                        <h4>$<%= producto.precio %> </h4>
+                        <button class="botonRedireccion" >añadir al Carrito</button>
                         </a>
-                    </div>
-                    <h3><%= producto.titulo %> </h3>
-                    <p><%= producto.descripcion %></p>
-                    <a class="botonRedireccion" href="/products/detail/<%= producto.id %>">ver mas</a>
-                </article>
+                    </article>
             <% }) %>
         </section>
         <aside>
