@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const methodOverride = require('method-override')
 
 /* Livereload */
 const livereload = require('livereload')
@@ -29,6 +30,10 @@ app.use(logger('dev'));
 /* Trabajar con metodos HTTP (post) */
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+/* Trabajar con put y delete */
+app.use(methodOverride('_method'))
+
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'..', 'public')));

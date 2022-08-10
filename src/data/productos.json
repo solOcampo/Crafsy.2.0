@@ -3,6 +3,7 @@
         "id": 1,
         "marca": "Motorola",
         "titulo": "Celular Motorola Moto G52 6+128 Gb Black",
+        "categorias": "Smarphones",
         "precio": 56000,
         "descuento": 20,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
@@ -18,6 +19,7 @@
         "id": 2,
         "marca": "Samsung",
         "titulo": "Samsung Galaxy S21 Ultra",
+        "categorias": "Smarphones",
         "precio": 220000,
         "descuento": 20,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
@@ -33,6 +35,7 @@
         "id": 3,
         "marca": "Motorola",
         "titulo": "Moto G100",
+        "categorias": "Smarphones",
         "precio": 80000,
         "descuento": 10,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
@@ -48,6 +51,7 @@
         "id": 5,
         "marca": "Samsung",
         "titulo": "samsung galaxy s21",
+        "categorias": "Smarphones",
         "precio": 220000,
         "descuento": 20,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
@@ -63,6 +67,7 @@
         "id": 6,
         "marca": "Iphone",
         "titulo": "Iphone 13 pro max plus extra super ultra violeta",
+        "categorias": "Smarphones",
         "precio": 530000,
         "descuento": 10,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
@@ -78,6 +83,7 @@
         "id": 7,
         "marca": "Nokia",
         "titulo": "Nokia 1100 un telefonazo y antirrobo",
+        "categorias": "Smarphones",
         "precio": 20000,
         "descuento": 40,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
@@ -87,6 +93,22 @@
             "Nokia 1100 caja.webp",
             "Nokia 1100 extra.webp",
             "Nokia 1100 negro.jpg"
+        ]
+    },
+    {
+        "id": 8,
+        "marca": "Asus",
+        "titulo": "NOTEBOOK GAMER ASUS FX506HCB-HN161T INTEL CORE I5",
+        "categorias": "Notebooks",
+        "precio": "329999",
+        "descuento": "10",
+        "stock": "3",
+        "descripcion": "Notebook de 15.6\" FHD (1920 x 1080) 144Hz. Procesador Intel Core i5-11400h (2.7 GHz hasta 4.5 GHz). Capacidad 512GB SSD M.2 NVMe PCIe 3.0. / RAM 16GB DDR4-3200 SO-DIMM. Placa de video NVIDIAGeForceRTX3050 Laptop GPU. Bateria 48WHrs, 3S1P, 3-cell Li-ion. Bluetooth 5.2 (dual band). Teclado numerico. USB 3.2 Gen 2 Type-C / USB 3.2 Gen 1 Type-A x3. Wi Fi 6 (802.11ax). HDMI 2.0. Camara frontal 720PHD. Sistema operativo Windows 10 home. Microfono incorporado.",
+        "imagenes": [
+            "default-image.png",
+            "default-image.png",
+            "default-image.png",
+            "default-image.png"
         ]
     }
 ]

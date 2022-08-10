@@ -165,7 +165,7 @@
 /* Tablet */
 @media (min-width:426px){
     .detail main .related article{
-        width: 30%;
+        width: 100%;
         max-width:205px;
     }
 }
@@ -194,7 +194,7 @@
     }
 
     .detail main .related article{
-        width: 24%;
+        width:100%;
         max-width:205px;
     }
 }

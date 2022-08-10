@@ -1,4 +1,4 @@
-const {list,create,edit,store} = require('../controllers/adminController')
+const {list,create,edit,store,update,destroy} = require('../controllers/adminController')
 const express = require('express');
 const router = express.Router();
 
@@ -10,5 +10,8 @@ router.get('/create', create);
 router.post('/create',store)
 
 router.get('/edit/:id', edit);
+router.put('/edit/:id', update);
+
+router.delete('/destroy/:id', destroy);
 
 module.exports = router;

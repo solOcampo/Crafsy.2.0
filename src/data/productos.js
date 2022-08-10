@@ -1,6 +1,9 @@
 const fs = require('fs')
 let productos = require('./productos.json');
 
+let ultimoId = productos[productos.length - 1].id + 1
+
+console.log(ultimoId);
 /* Creamos un nuevo producto */
 let nuevoProducto = {
     id: 7,
@@ -49,9 +52,9 @@ let ProduEdit = productos.map((element,index) => {
 /* Eliminar un producto */
 let eliminarProducto = productos.filter(element => element.id !== 4)
 
-console.log(eliminarProducto);
+
 
 /* Pasamos el Objeto literal a un string */
-let string = JSON.stringify(eliminarProducto,null,4)
+/* let string = JSON.stringify(eliminarProducto,null,4) */
 /* Subimos los cambios y actualizaciones al json */
-fs.writeFileSync('./src/data/productos.json',string,'utf-8')
+/* fs.writeFileSync('./src/data/productos.json',string,'utf-8') */

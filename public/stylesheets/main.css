@@ -18,7 +18,7 @@
     margin: 0;
 }
 .home main .products_cards article a{
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
