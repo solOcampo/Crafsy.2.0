@@ -25,8 +25,11 @@ app.set('view engine', 'ejs');
 
 app.use(connectLivereload())
 app.use(logger('dev'));
+
+/* Trabajar con metodos HTTP (post) */
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'..', 'public')));
 

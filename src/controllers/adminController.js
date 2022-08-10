@@ -20,4 +20,8 @@ module.exports = {
             producto
         })
     },
+    store:(req,res) => {
+        let producto = req.body
+        res.send(producto)
+    }
 }
