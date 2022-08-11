@@ -10,13 +10,12 @@
         <main>
             <section class="imagenes">
                 <div class="img-principal">
-                    <img src="/images/productos/<%= producto.imagenes[0] %>" alt="">
+                    <img id="imgMain" src="/images/productos/<%= producto.imagenes[0] %>" alt="Imagen principal">
                 </div>
                 <div class="img-secundarias">
-                    <img src="/images/productos/<%= producto.imagenes[1] %>" alt="">
-                    <img src="/images/productos/<%= producto.imagenes[2] %>" alt="">
-                    <img src="/images/productos/<%= producto.imagenes[3] %>" alt="">
-                    <img src="/images/productos/<%= producto.imagenes[0] %>" alt="">
+                    <% producto.imagenes.forEach(img => { %>
+                        <img src="/images/productos/<%= img %>" alt="Imagen secundaria" onclick="document.getElementById('imgMain').setAttribute('src','/images/productos/<%= img %>')">
+                    <% }) %>
                 </div>
             </section>
             <section class="product-detail">
@@ -24,8 +23,10 @@
                 <h1><%= producto.titulo %></h1>
                 <div class="bloque-completo">
                     <article class="price">
-                        <small>%<%= producto.descuento %></small>
-                        <span>$<%= producto.precio %></span>
+                        <% if (producto.descuento !== 0) { %>
+                            <small>%<%= producto.descuento %></small>
+                            <span>$<%= producto.precio %></span>
+                        <% } %>
                         <p class="precio">$<%= producto.precio - (producto.precio * producto.descuento / 100)%></p>
                     </article>
                     <article>
@@ -62,7 +63,7 @@
                 <% for( let i = 0; i < 4; i++ ) { %>
                     <a href="/products/detail/<%= productos[i].id %>">
                         <article>
-                            <div class="related-img-0" style="background-image:url('/images/productos/<%= productos[i].imagenes[0] %>')"></div>
+                            <div class="related-img-0"  style="background-image:url('/images/productos/<%= productos[i].imagenes[0] %>')"></div>
                             <p>$<%= productos[i].precio %></p>
                             <h4><%= productos[i].titulo %></h4>
                             <button>añadir al carrito</button>

@@ -34,7 +34,6 @@ app.use(express.urlencoded({ extended: false }));
 /* Trabajar con put y delete */
 app.use(methodOverride('_method'))
 
-
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'..', 'public')));
 
