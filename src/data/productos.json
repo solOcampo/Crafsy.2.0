@@ -2,17 +2,17 @@
     {
         "id": 1,
         "marca": "Motorola",
-        "titulo": "Celular Motorola Moto G52 6+128 Gb Black",
+        "titulo": "Motorola Moto G30 6+128Gb",
         "categorias": "Smarphones",
         "precio": 56000,
         "descuento": 20,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
         "stock": 13,
         "imagenes": [
-            "_0003_2020_Capri-_BasicPack_PhantomBlack_PDP-Hero.png",
-            "_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png",
-            "_0000_2020_Capri-_BasicPack_PhantomBlack_Backside.png",
-            "168343-800-auto.png"
+            "Moto g30.png",
+            "Moto g30 (2).png",
+            "Moto g30 (3).png",
+            "Moto g30 (4).png"
         ]
     },
     {
@@ -25,10 +25,10 @@
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
         "stock": 13,
         "imagenes": [
-            "164953-800-auto.png",
-            "164958-800-auto.png",
-            "169868-800-auto.png",
-            "163494-800-auto.png"
+            "S21 Ultra1.png",
+            "S21 Ultra2.png",
+            "S21 Ultra4.png",
+            "S21 Ultra3.png"
         ]
     },
     {
@@ -41,26 +41,26 @@
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
         "stock": 13,
         "imagenes": [
-            "Moto-G100-pdp-kv-render-Iridescent-Sky-8g7y85otv.png",
-            "_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png",
-            "_0000_2020_Capri-_BasicPack_PhantomBlack_Backside.png",
-            "169868-800-auto.png"
+            "Moto-G100 (2).png",
+            "Moto-G100.png",
+            "Moto-G100 (3).png",
+            "Moto-G100 (4).png"
         ]
     },
     {
         "id": 6,
         "marca": "Iphone",
-        "titulo": "Iphone 13 pro max plus extra super ultra violeta",
+        "titulo": "Iphone 13 pro max plus extra ultra",
         "categorias": "Smarphones",
         "precio": 530000,
         "descuento": 10,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
         "stock": 3,
         "imagenes": [
-            "Moto-G100-pdp-kv-render-Iridescent-Sky-8g7y85otv.png",
-            "_0005_2020_Capri-_BasicPack_PhantomBlack_Front-View.png",
-            "_0000_2020_Capri-_BasicPack_PhantomBlack_Backside.png",
-            "169868-800-auto.png"
+            "Iphone 13.webp",
+            "Iphone 13 2.webp",
+            "Iphone 13 3.webp",
+            "Iphone 13 4.webp"
         ]
     },
     {
@@ -82,17 +82,17 @@
     {
         "id": 8,
         "marca": "Asus",
-        "titulo": "NOTEBOOK GAMER ASUS FX506HCB-HN161T INTEL CORE I7  ",
+        "titulo": "NOTEBOOK GAMER ASUS, CORE I7",
         "categorias": "Notebooks",
         "precio": 329999,
         "descuento": 10,
         "stock": 3,
         "descripcion": "Notebook de 15.6\" FHD (1920 x 1080) 144Hz. Procesador Intel Core i7-11600h (2.6 GHz hasta 4.6 GHz). Capacidad 512GB SSD M.2 NVMe PCIe 3.0. / RAM 16GB DDR4-3200 SO-DIMM. Placa de video NVIDIAGeForceRTX3050 Laptop GPU. Bateria 48WHrs, 3S1P, 3-cell Li-ion. Bluetooth 5.2 (dual band). Teclado numerico. USB 3.2 Gen 2 Type-C / USB 3.2 Gen 1 Type-A x3. Wi Fi 6 (802.11ax). HDMI 2.0. Camara frontal 720PHD. Sistema operativo Windows 10 home. Microfono incorporado.",
         "imagenes": [
-            "default-image.png",
-            "default-image.png",
-            "default-image.png",
-            "default-image.png"
+            "Notebook-asus.jpg",
+            "Notebook-asus 2.jpg",
+            "Notebook-asus 3.jpg",
+            "Notebook-asus 4.jpg"
         ]
     },
     {

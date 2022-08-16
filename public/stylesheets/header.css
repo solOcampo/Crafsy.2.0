@@ -21,10 +21,10 @@ header img{
 }
 header .burger label{
     position: absolute;
-    top: 15px;
+    top: 19px;
     right: 10px;
     font-size: 30px;
-    padding: 20px 30px;
+    padding: 11px 30px;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
@@ -44,6 +44,8 @@ header .burger nav{
 }
 header .burger nav ul{
     padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 header .burger nav ul li{
     margin: 20px 0;
@@ -78,25 +80,29 @@ header .burger nav a{
     header .burger nav{
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
     }
     header .burger nav ul{
+        padding-bottom: 0;
         display: flex;
         flex-wrap: wrap;
         width: 49%;
+        margin-bottom: 0;
     }
     header .burger nav ul.menu{
         width: 65%;
         justify-content: flex-start;
     }
     header .burger nav ul.user{
-        width: 32%;
+        width: 34%;
         justify-content: flex-end;
     }
     header .burger nav ul li{
         padding: 0 5px;
     }
     header .burger nav ul li a{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -105,6 +111,6 @@ header .burger nav a{
         padding: 0 10px;
     }
     header .burger nav ul li a{
-        font-size: 20px;
+        font-size: 18px;
     }
 }

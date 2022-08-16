@@ -63,8 +63,10 @@
                 <% for( let i = 0; i < 4; i++ ) { %>
                     <a href="/products/detail/<%= productos[i].id %>">
                         <article>
-                            <div class="related-img-0"  style="background-image:url('/images/productos/<%= productos[i].imagenes[0] %>')"></div>
-                            <p>$<%= productos[i].precio %></p>
+                            <div class="precioImg">
+                                <div class="related-img-0"  style="background-image:url('/images/productos/<%= productos[i].imagenes[0] %>')"></div>
+                                <p>$<%= productos[i].precio %></p>
+                            </div>
                             <h4><%= productos[i].titulo %></h4>
                             <button>añadir al carrito</button>
                         </article>
