@@ -19,6 +19,11 @@ module.exports = {
         return res.render('admin/crearProducto')
     },
     store:(req,res) => {
+
+        let img = req.files.map(imagen => {
+            return imagen.filename
+        })
+
         let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
         
         let productoNuevo = {
@@ -30,12 +35,7 @@ module.exports = {
             descuento:+Descuento,
             stock:+Stock,
             descripcion:Descripcion,
-            imagenes: [
-                "default-image.png",
-                "default-image.png",
-                "default-image.png",
-                "default-image.png"
-            ],
+            imagenes: (req.files.length === 4) ? img : ['default-image.png','default-image.png','default-image.png','default-image.png'],
         }
 
         productos.push(productoNuevo)
@@ -97,5 +97,20 @@ module.exports = {
             productos: historial,
             redirection: "list"
         })
+    },
+    restore: (req,res) => {
+        idParams = +req.params.id
+
+        let productoParaRestaurar = historial.find((elemento) => {
+            return elemento.id == idParams
+        })
+
+        productos.push(productoParaRestaurar)
+        guardar(productos)
+
+        let historialModificado = historial.filter(producto => producto.id !== idParams)
+        guardarHistorial(historialModificado)
+
+        return res.redirect('/admin/list')
     }
 }

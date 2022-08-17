@@ -1,18 +1,1 @@
-[
-    {
-        "id": 5,
-        "marca": "Samsung",
-        "titulo": "samsung galaxy s21",
-        "categorias": "Smarphones",
-        "precio": 220000,
-        "descuento": 20,
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, placeat eius perferendis aspernatur doloribus aliquid, quibusdam aperiam hic a tenetur! Quis rem aut qui expedita ut aspernatur nisi officiis.",
-        "stock": 13,
-        "imagenes": [
-            "169868-800-auto.png",
-            "164953-800-auto.png",
-            "164958-800-auto.png",
-            "163494-800-auto.png"
-        ]
-    }
-]
+[]
