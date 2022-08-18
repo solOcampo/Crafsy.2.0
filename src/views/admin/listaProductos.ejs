@@ -38,15 +38,21 @@
                         <td><a href="/admin/edit/<%= producto.id %> "><%= producto.descuento %></a></td>
                         <td>
                             <div>
+                              <% if (redirection !== "list") { %>
                                 <a href="/admin/edit/<%= producto.id%>">
-                                    <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
-                                </a>
+                                  <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                              </a>
+                              <% }else{ %>
+                                <form action="/admin/restore/<%= producto.id%>?_method=DELETE" method="post">
+                                  <button type="submit" class="btn btn-success"><i class="fas fa-plane-departure"></i></button>
+                                </form>
+                              <% } %>
                                 <% if (redirection !== "list") { %>
                                   <form action="/admin/destroy/<%= producto.id%>?_method=DELETE" method="post">
-                                    <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                    <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
                                   </form>
                                 <% }else{ %>
-                                  <form action="/admin/restore/<%= producto.id%>?_method=DELETE" method="post">
+                                  <form action="/admin/crash/<%= producto.id%>?_method=DELETE" method="post">
                                     <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
                                   </form>
                                 <% } %>

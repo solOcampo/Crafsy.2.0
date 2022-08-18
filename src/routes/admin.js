@@ -1,22 +1,7 @@
-const {list,create,edit,store,update,destroy,history,restore} = require('../controllers/adminController')
+const {list,create,edit,store,update,destroy,history,restore,crash,create2} = require('../controllers/adminController')
 const express = require('express');
 const router = express.Router();
-
-const path = require('path')
-const multer = require('multer')
-
-const storage = multer.diskStorage({
-    destination: (req,file,callback) => {
-        callback(null,'./public/images/productos')
-    },
-    filename:(req,file,callback) => {
-        callback(null,'img-' + Date.now() + path.extname(file.originalname))
-    }
-})
-
-const upload = multer({
-    storage
-    })
+const upload = require('../middlewares/multerProducts')
 
 /* GET home page. */
 router.get('/list', list);
@@ -24,6 +9,7 @@ router.get('/history', history);
 
 /* Creando un producto */
 router.get('/create', create);
+router.get('/create2', create2);
 router.post('/create',upload.array('imagenes'),store);
 
 /* Editando un producto */
@@ -32,6 +18,7 @@ router.put('/edit/:id',upload.array('imagenes'), update);
 
 /* Eliminando un producto */
 router.delete('/destroy/:id', destroy);
-router.delete('/restore/:id', restore)
+router.delete('/restore/:id', restore);
+router.delete('/crash/:id', crash);
 
 module.exports = router;

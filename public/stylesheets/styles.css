@@ -1,3 +1,4 @@
+@import url('./glider.css');
 @import url('./normalize.css');
 @import url('./general.css');
 @import url('./variables.css');
@@ -8,3 +9,5 @@
 @import url('./login.css');
 @import url('./detail.css');
 @import url('./cart.css');
+@import url('./cards.css');
+@import url('./productos.css');

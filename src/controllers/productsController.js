@@ -12,4 +12,17 @@ module.exports = {
     cart: (req,res) => {
         res.render('cart')
     },
+    categoria : (req,res) => {
+        let categoriaSeleccionada = req.params.categoria
+        let categorias = ['Smartphones','Tablets','Notebooks']
+        
+        productoPorCategoria = productos.filter(producto => producto.categorias === categoriaSeleccionada)
+
+        res.render('productos',{
+            categorias,
+            categoriaSeleccionada,
+            productos,
+            productoPorCategoria
+        })
+    },
 }
