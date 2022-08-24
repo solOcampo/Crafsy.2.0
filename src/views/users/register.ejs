@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <%- include('./partials/head',{title: 'Register'}) %> 
+    <%- include('../partials/head',{title: 'Register'}) %> 
 
 <body class="register">
 
-    <%- include('./partials/header') %> 
+    <%- include('../partials/header') %> 
 
     <main>
         <h1>Registro</h1>
@@ -83,17 +83,10 @@
                     <label for="terminos">Acepto los terminos y condiciones</label>
                 </div>
             <!-- botones -->
-            <div class="bottom">
-                <h2 class="bottom">Boton enviar con etiquetas input</h2>
-                <input type="button" value="Registrarme" submit>
-                <input type="button" value="Cancelar" reset>
-            </div>
-
-            <h2 class="bottom">Boton enviar con etiquetas button</h2>
             <button type="submit">Registrarme</button>
             <button type="reset">Cancelar</button>
         </form>
     </main>
-    <%- include('./partials/footer') %> 
+    <%- include('../partials/footer') %> 
 </body>
 </html>
