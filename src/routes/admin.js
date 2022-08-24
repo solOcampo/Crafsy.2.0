@@ -10,7 +10,7 @@ router.get('/history', history);
 /* Creando un producto */
 router.get('/create', create);
 router.get('/create2', create2);
-router.post('/create',upload.array('imagenes'),store);
+router.post('/create',upload.array('imagen'),store);
 
 /* Editando un producto */
 router.get('/edit/:id', edit);

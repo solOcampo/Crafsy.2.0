@@ -27,20 +27,20 @@ module.exports = {
             let img = req.files.map(imagen => {
                 return imagen.filename
             })
-
-            let { Marca, Titulo, Categoria, Precio, Descuento, Stock, Descripcion } = req.body
+            let { marca, titulo, categoria, precio, descuento, stock, descripcion } = req.body
 
             let productoNuevo = {
                 id: productos[productos.length - 1].id + 1,
-                marca: Marca,
-                titulo: Titulo,
-                categorias: Categoria,
-                precio: +Precio,
-                descuento: +Descuento,
-                stock: +Stock,
-                descripcion: Descripcion,
+                marca,
+                titulo,
+                categoria,
+                precio : +precio,
+                descuento : +descuento,
+                stock: +stock,
+                descripcion,
                 imagenes: (req.files.length === 4) ? img : ['default-image.png', 'default-image.png', 'default-image.png', 'default-image.png'],
             }
+
 
             productos.push(productoNuevo)
             guardar(productos)
@@ -122,6 +122,15 @@ module.exports = {
     },
     crash: (req, res) => {
         idParams = +req.params.id
+
+        let producto = historial.find(product => product.id === idParams)
+		let ruta = (dato) => fs.existsSync(path.join(__dirname,'..','..','public','images','productos',dato))
+		
+        producto.imagenes.forEach(imagen => {
+            if (ruta(imagen) && (imagen !== "default-image.png")){
+                fs.unlinkSync(path.join(__dirname,'..','..','public','images','productos',imagen))
+            }
+        })
 
         let historialModificado = historial.filter(producto => producto.id !== idParams)
         guardarHistorial(historialModificado)
