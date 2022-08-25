@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "alguien",
+        "email": "si@tenemosemail.com",
+        "pass": "tenemosunacontraseñasecreta",
+        "pais": "Argentina",
+        "genero": "M",
+        "image": "fotuli.jpg",
+        "rol": "admin"
+    },
+    {
+        "id": 2,
+        "name": "cristian",
+        "email": "cris@gmail.com",
+        "pass": "12345678",
+        "pais": "argentina",
+        "genero": "M",
+        "image": "avatar-porDefecto.jpg",
+        "rol": "usuario"
+    }
+]

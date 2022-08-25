@@ -44,3 +44,20 @@
 .register .bottom{
     margin-bottom: 20px;
 }
+
+.register .container-img label{
+    background-color: var(--Rogelio);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    color: white;
+}
+.register .container-img label:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: var(--Rogelio);
+}
+.register .container-img input{
+    display: none;
+}

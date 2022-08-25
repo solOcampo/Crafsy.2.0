@@ -9,25 +9,34 @@
 
     <main>
         <h1>Registro</h1>
-        <form action="" method="get">
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="container bottom">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
-                <small>Debe ingresar su nombre</small>
+                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" value="<%= locals.old && old.name ? old.name : null%>">
+                <% if (locals.errors && errors.name) { %>
+                    <small><%= errors.name.msg %></small>
+                <% } %>
             </div>
             <div class="container bottom">
-                <input type="email" name="email" id="email" placeholder="Ingresa tu email">
-                <small>Debe ingresar su email</small>
+                <label for="name">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email" value="<%= locals.old && old.email ? old.email : null%>">
+                <% if (locals.errors && errors.email) { %>
+                    <small><%= errors.email.msg %></small>
+                <% } %>
             </div>
             <div class="container bottom">
                 <label for="pass">Contraseña</label>
                 <input type="password" name="pass" id="pass" placeholder="Ingresa tu Contraseña">
-                <small>Debe ingresar su contraseña</small>
+                <% if (locals.errors && errors.pass) { %>
+                    <small><%= errors.pass.msg %></small>
+                <% } %>
             </div>
             <div class="container bottom">
                 <label for="pass2">Confirma tu contraseña</label>
                 <input type="password" name="pass2" id="pass2" placeholder="Confirmar Contraseña">
-                <small>Las contraseñas no coinciden</small>
+                <% if (locals.errors && errors.pass2) { %>
+                    <small><%= errors.pass2.msg %></small>
+                <% } %>
             </div>
             <h2 class="bottom">Pais de nacimiento</h2>
             <div class="container bottom">
@@ -40,48 +49,37 @@
                     <option value="uruguay">Uruguay</option>
                     <option value="colombia">Colombia</option>
                 </select>
-                <small>Obligatorio</small>
+                <% if (locals.errors && errors.pais) { %>
+                    <small><%= errors.pais.msg %></small>
+                <% } %>
             </div>
             <h2 class="bottom">Genero</h2>
             <div class="bottom">
-                <input type="radio" name="Genero" id="F" value="F">
+                <input type="radio" name="genero" id="F" value="F" <%= locals.old && old.genero==='F' ? "checked" : null%> >
                 <label for="F">Femenino</label>
-                <input type="radio" name="Genero" id="M" value="M">
+                <input type="radio" name="genero" id="M" value="M" <%= locals.old && old.genero==='M' ? "checked" : null%>>
                 <label for="M">Masculino</label>
-                <input type="radio" name="Genero" id="SN" value="SN">
+                <input type="radio" name="genero" id="SN" value="SN" <%= locals.old && old.genero==='SN' ? "checked" : null%> >
                 <label for="SN">Prefiero no decirlo</label>
+                <% if (locals.errors && errors.genero) { %>
+                    <small><%= errors.genero.msg %></small>
+                <% } %>
             </div>
-            <h2 class="bottom">Hobbies</h2>
-            <div class="bottom">
-                <div class="bottom">
-                    <input type="checkbox" name="Hobbies" id="Guitarra" value="Guitarra">
-                    <label for="Guitarra">Guitarra</label>
-                    <input type="checkbox" name="Hobbies" id="Fut" value="Futbol">
-                    <label for="Fut">Futbol</label>
-                    <input type="checkbox" name="Hobbies" id="T" value="Tenis">
-                    <label for="T">Tenis</label>
-                    <input type="checkbox" name="Hobbies" id="Pr" value="Programacion">
-                    <label for="Pr">Programacion</label>
-                </div>
-                <div class="bottom">
-                    <input type="checkbox" name="Hobbies" id="JJ" value="Juga">
-                    <label for="JJ">Juga jueguito</label>
-                    <input type="checkbox" name="Hobbies" id="Leer" value="Leer">
-                    <label for="Leer">Leer</label>
-                    <input type="checkbox" name="Hobbies" id="D" value="Dormir">
-                    <label for="D">Dormir</label>
-                    <input type="checkbox" name="Hobbies" id="Favorito" value="Estudiar">
-                    <label for="Favorito">Estudiar</label>
-                </div>
+            <div class="container container-img">
+                <label for="image">Subi tu imagen aqui</label>
+                <input type="file" name="image" id="image">
+                <% if (locals.errors && errors.image) { %>
+                    <small><%= errors.image.msg %></small>
+                <% } %>
             </div>
 
-            <h2 class="bottom">Dejanos tus comentarios</h2>
-            
-                <textarea class="bottom" name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribi tus comentarios"></textarea>
-                <div class="bottom">
-                    <input type="checkbox" name="terminos" id="terminos">
-                    <label for="terminos">Acepto los terminos y condiciones</label>
-                </div>
+            <div class="bottom">
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="terminos">Acepto los terminos y condiciones</label>
+                <% if (locals.errors && errors.terminos) { %>
+                    <small><%= errors.terminos.msg %></small>
+                <% } %>
+            </div>
             <!-- botones -->
             <button type="submit">Registrarme</button>
             <button type="reset">Cancelar</button>
