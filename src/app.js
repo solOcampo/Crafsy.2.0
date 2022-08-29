@@ -4,6 +4,10 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const methodOverride = require('method-override')
+const session = require('express-session')
+
+/* Implementamos locals dentro de nuestra aplicacion */
+const userLogin = require('./middlewares/userLoginCheck')
 
 /* Livereload */
 const livereload = require('livereload')
@@ -33,6 +37,13 @@ app.use(express.urlencoded({ extended: false }));
 
 /* Trabajar con put y delete */
 app.use(methodOverride('_method'))
+
+/* Login e inicio de sesion */
+app.use(session({
+  secret: "La Comision 17"
+}))
+
+app.use(userLogin)
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'..', 'public')));
